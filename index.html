@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+  <head>  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>login</title>   
+  </head>
+  <body>
+    <div class="picture-container">
+      <div class="login-image">
+        <img src="./image/34.png" alt="Ảnh Đăng Nhập">
+      </div>
+      <hr>
+      <div class="login-form">
+    <div class="login-container">
+    <form class="login-form">
+      <div class="image-container">
+    <img src="addy1.png" alt="Addy" width="300" height="175">
+      </div>
+    <h4 id="h4">Đăng nhập vào</h4>
+    <h1 id="h1">Addy Admin Dashboard</h1>
+      <label for="uname">Tên đăng nhập</label><br />
+      <input
+        type="text"
+        name="uname"
+        placeholder="Nhập tên đăng nhập của bạn"
+        <div class="password-container"
+      />
+      <label for="passw">Mật khẩu</label><br />
+      <input type="password" id="password" name="psw" placeholder="Nhập mật khẩu của bạn" />
+      <i id="togglePassword" class="far fa-eye-slash"></i>
+      <button type="submit">Đăng nhập</button>
+    </div>
+    
+    <script>
+      document.getElementById('togglePassword').addEventListener('click', function() {
+  var passwordField = document.getElementById('password');
+  var icon = this; 
+  if (passwordField.type === 'password') {
+    passwordField.type = 'text'; 
+    icon.classList.remove('fa-eye-slash'); 
+    icon.classList.add('fa-eye');
+  } else {
+    passwordField.type = 'password'; 
+    icon.classList.remove('fa-eye'); 
+    icon.classList.add('fa-eye-slash');
+  }
+});
+      </script>
+      <script>
+        // Hàm ngăn chặn việc thay đổi kích thước cửa sổ
+        window.addEventListener('resize', function() {
+            // Khôi phục kích thước ban đầu khi cửa sổ bị thay đổi
+            window.resizeTo(800, 600); // Kích thước mặc định 800x600
+        });
+
+        // Khóa kích thước cửa sổ khi trang được tải
+        window.resizeTo(800, 600); // Đặt kích thước cửa sổ ban đầu là 800x600
+    </script>
+    </form>
+    
+  </div>
+  </body>
+</html>
