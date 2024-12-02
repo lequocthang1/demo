@@ -20,21 +20,30 @@
       <div class="image-container">
     <img src="addy1.png" alt="Addy" width="300" height="175">
       </div>
+
     <h4 id="h4">Đăng nhập vào</h4>
     <h1 id="h1">Addy Admin Dashboard</h1>
+
+   <div class="account=container" />
       <label for="uname">Tên đăng nhập</label><br />
       <input
         type="text"
         name="uname"
-        placeholder="Nhập tên đăng nhập của bạn"
-        <div class="password-container"
-      />
+        placeholder="Nhập tên đăng nhập của bạn"/>
+    </div>
+
+        <div class="password-container" />
       <label for="passw">Mật khẩu</label><br />
-      <input type="password" id="password" name="psw" placeholder="Nhập mật khẩu của bạn" />
+      <input 
+          type="password" 
+          id="password" 
+          name="psw" 
+          placeholder="Nhập mật khẩu của bạn" />
       <i id="togglePassword" class="far fa-eye-slash"></i>
       <button type="submit">Đăng nhập</button>
     </div>
-    
+  </div>
+
     <script>
       document.getElementById('togglePassword').addEventListener('click', function() {
   var passwordField = document.getElementById('password');
